@@ -48,7 +48,7 @@ app.post("/api/products/", (req, res, next) => {
                 return;
             } else {
                 res.json({
-                    "message": "customer has registered",
+                    "message": "customer $name has registered",
                     "data": req.body,
                     "customerId": this.lastID
                 })
